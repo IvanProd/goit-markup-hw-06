@@ -122,14 +122,23 @@
                         <!--элементы списка-->
                         <li class="wedo-item">
                             <img src="./images/main/features/box_1.jpg" alt="алгоритм на листке бумаги клавиатура экран с цветным кодом" width="370" height="294">
+                            <div class="wedo-label">
+                                <p class="wedo-lable-text">Десктопные приложения</p>
+                            </div>
                         </li>
 
                         <li class="wedo-item">
                             <img src="./images/main/features/box_2.jpg" alt="разработка мобильного приложения" width="370" height="294">
+                            <div class="wedo-label">
+                                <p class="wedo-lable-text">Мобильные приложения</p>
+                            </div>
                         </li>
 
                         <li class="wedo-item">
                             <img src="./images/main/features/box_3.jpg" alt="планшет с пейнт мапом водной руке и стилус в другой руке" width="370" height="294">
+                            <div class="wedo-label">
+                                <p class="wedo-lable-text">Дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -466,32 +475,13 @@
                     <label for="">
                         <input type="text" class="modal-form-input">
                     </label>
-                    
+                    <p class="commits">комментарий</p>
                 </form>
             </div>
         </div>
     </div>
     
     <!--скрипт открытия закрытия окна-->
-    <script>
-        const refs = {
-          openModalBtn: document.querySelector('[data-open-modal]'),
-          closeModalBtn: document.querySelector('[data-close-modal]'),
-          backdrop: document.querySelector('[data-backdrop]'),
-        };
-    
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-    
-        refs.backdrop.addEventListener('click', logBackdropClick);
-    
-        function toggleModal() {
-          refs.backdrop.classList.toggle('is-hidden');
-        }
-    
-        function logBackdropClick() {
-          console.log('Это клик в бекдроп');
-        }
-    </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

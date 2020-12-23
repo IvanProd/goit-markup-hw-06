@@ -26,6 +26,8 @@
     /*чем мы занимаемся*/
     --head-color: #212121;
     --item-bgcolor: #757575;
+    --wedo-lable-bgcolor: rgba(47, 48, 58, 0.8);
+    --wedo-lable-text: #fff;
     
     /*наша команда*/
     --bgcolor-section-our-team: #F5F4FA;
@@ -63,6 +65,10 @@
 
     /*модальное окно*/
     --backdrop-color: rgba(0, 0, 0, 0.5);
+
+    /*Карточка портфолио*/
+    --thumb-text-color: #fff;
+    --thumb-background-color: rgba(33,150,243,0.9);
 
 }
 /*===============================*/
@@ -145,17 +151,18 @@ a {
 }
 /*===ЛОГОТИП===*/
 .logo {
+    width: 145px;
     margin: 24px 93px 25px 0;
 }
 /*левая сторона*/
 .logo-left {
+
     font-family: var(--Raleway);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.192;
 
-    letter-spacing: 0.03em;
     color: var(--acent-color);
 }
 /*правая сторона*/
@@ -166,7 +173,7 @@ a {
     font-size: 26px;
     line-height: 1.192;
 
-    letter-spacing: 0.03em;
+    /*letter-spacing: 0.03em;*/
     color: var(--black-color);
 }
 /*===ГЛАВНАЯ НАВИГАЦИЯ===*/
@@ -273,6 +280,7 @@ a {
 }
 /*ссылка почта*/
 .contact-link-mail {
+    width: 161px;
     display: inline-flex;
     align-items: center;
     color: var(--contact-link);
@@ -293,6 +301,7 @@ a {
 /*ссылка телефон*/
 .contact-link-telephon{
     display: inline-flex;
+    width: 142px;
     align-items: center;
     color: var(--contact-link);
 }
@@ -316,7 +325,6 @@ a {
 
 /*контейнер героя*/
 .hero {
-    max-width: 1600px;
     min-height: 600px;
     margin: 0 auto 0 auto;
     /*outline: 1px solid red;*/
@@ -326,7 +334,8 @@ a {
 /*оформление секции герой и фона*/
 .conteiner-hero {
     max-width: 1600px;
-    height: 600px;
+    min-width: 1200px;
+    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -389,7 +398,6 @@ a {
     font-size: 16px;
     line-height: 1.875;
     color: var(--hero-text-color);
-    letter-spacing: 0.06em;
 }
 
 /*===ОСОБЕННОСТИ===*/
@@ -510,9 +518,33 @@ a {
 }
 /*элемент списка*/
 .wedo-item {
+    position: relative;
     width: 370px;
     height: 294px;
     background-color: var(--item-bgcolor);
+}
+/*блок текста чем мы занимаемся*/
+.wedo-label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+
+    background-color: var(--wedo-lable-bgcolor);
+}
+/*текст*/
+.wedo-lable-text {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--wedo-lable-text);
 }
 
 /*===наша команда===*/
@@ -614,8 +646,14 @@ a {
     width: 44px;
     height: 44px;
     padding: 12px;
+    background-color: transparent;
+    border-radius: 50%;
     /*margin-right: 10px;*/
     color: var(--social-icon);
+    transition-property: background-color,color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     
     
     /*outline: 1px solid green;*/
@@ -626,6 +664,7 @@ a {
     background-color: var(--acent-color);
     border-radius: 50%;
     color: var(--social-ico-acent);
+
 }
 /*иконки соцсетей*/
 .svg-icon {
@@ -696,6 +735,11 @@ a {
     color: var(--icon-link-color);
     border: 1px solid;
     border-radius: 4px;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 /*акцент ссылок*/
 .link-icon:hover,
@@ -801,7 +845,6 @@ a {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;
 
     color: var(--logo-text-color);
 }
@@ -816,7 +859,6 @@ a {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;
 
     
 }
@@ -862,11 +904,16 @@ a {
     height: 44px;
     border-radius: 50%;
     background-color: var(--logo-text-color-10p);
-    color:var(--logo-text-color)
+    color:var(--logo-text-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*выдиление иконок соцсетей*/
 .connect-link:hover,
 .connect-link:focus {
+    border-radius: 50%;
     background-color: var(--acent-color);
 }
 /*иконка*/
@@ -1013,7 +1060,32 @@ a {
     /*outline: 1px solid red;*/
 }
 .project-card-thumb {
+    position: relative;
     
+    overflow: hidden;
+    
+    /*outline:1px solid tomato;*/
+}
+.project-card-thumb:hover>.thumb {
+    position: absolute;
+    /*top: 0;*/
+    transform: translateY(-100%);
+    transition: transform 250ms;
+    width: 100%;
+    height: 100%;
+
+    /*outline:1px solid tomato;*/
+}
+.thumb {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transition: transform 250ms;
+
+    cursor: default;
+    background-color: var(--thumb-background-color);
 }
 
 .thumb-text {
@@ -1024,7 +1096,9 @@ a {
     line-height: 1.555;
     letter-spacing: 0.03em;
 
-    color: blue;
+    color: var(--thumb-text-color);
+
+    /*outline: 1px solid teal;*/
 }
 .project-card:hover {
     display: block;
@@ -1039,11 +1113,11 @@ a {
                 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*outline: 1px solid green;*/
 }
-.project-card:focus {
-    
+.card-link:focus {
+    display: block;
     width: 370px;
     height: 404px;  
-    outline: 3px solid black;
+    /*outline: 3px solid black;*/
     background: #FFFFFF;
     /*border: 1px solid #EEEEEE;*/
     box-sizing: border-box;
@@ -1086,28 +1160,29 @@ a {
     position: fixed;
     top: 0;
     left: 0;
+    width:  100%;
+    height: 100%; 
 
     opacity: 1;
-    transform: perspective(400px) rotateY(0deg) scale(1);
-    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms;
-    
-    width:  100%;
-    height: 100%;  
+    transform:  scale(1);
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1)250ms;
+     
     background-color: var(--backdrop-color);  
 }
 /*скрытие фона*/
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-    transform: perspective(400px) rotateY(90deg) scale(0);
+    transform: scale(0);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), opacity 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*модальное окно*/
 .modal-port {
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%, -50%) scale(1);
-
+    transform: translate(-50%, -50%) scale(1) perspective(500px) rotateY(0deg);
+    transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
 
     width: 528px;
@@ -1115,7 +1190,19 @@ a {
     background-color: var(--hero-text-color);
 
 
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
+}
+.backdrop.is-hidden>.modal-port{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0) perspective(500px) rotateY(90deg);
+    transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--hero-text-color);  
 }
 
 /*иконка закрытия*/
@@ -1136,15 +1223,16 @@ a {
     align-items: center;
     justify-content: center;
 
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 /*иконка закрытия (кркстик)*/
 .close-icon{
     width: 12px;
     height: 12px;  
     
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
+
 /*оглавление модального окна*/
 .modal-head{
     width: 448px;
