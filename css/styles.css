@@ -122,9 +122,9 @@ a {
 }
 /*=============================*/
 
-/*##################################################*/
-/*#################### ПОТФОЛИО ####################*/
-/*##################################################*/
+/*#################################################*/
+/*#################### Главная ####################*/
+/*#################################################*/
 
 /*===КОНТЕЙНЕР ГЛАВНОЙ СТРАНИЦЫ===*/
 .mani-pag {
@@ -948,10 +948,11 @@ a {
 
     /*outline: 1px solid orange;*/
 }
-
+/*форма заролнения*/
 .subscribe-form{
     display: flex;
 }
+/*кнопка отправить*/
 .subscribe-button {
     display: flex;
     align-items: center;
@@ -970,15 +971,18 @@ a {
 
     /*outline: 1px solid green;*/
 }
+/*поле заполнения*/
 .footer-input {
     width: 358px;
     height: 50px;
     margin-top: 20px;
+    padding-left: 16px;
 
     border: 1px solid var(--input-border);
     border-radius: 4px;
     background-color: transparent;
 }
+/*надпись на кнопке*/
 .subscribe-button-text {
     font-family: var(--Roboto);
     font-style: normal;
@@ -991,6 +995,7 @@ a {
 
     color: var(--subscribe-button-text);
 }
+/*иконка кнопки*/
 .subscribe-button-icon {
     width: 24px;
     height: 24px;
@@ -1136,6 +1141,7 @@ a {
     /*технический*/
     /*outline: 1px solid red;*/
 }
+/*скрытие оверлея*/
 .project-card-thumb {
     position: relative;
     
@@ -1143,6 +1149,7 @@ a {
     
     /*outline:1px solid tomato;*/
 }
+/*оверлей по ховеру*/
 .project-card-thumb:hover>.thumb {
     position: absolute;
     /*top: 0;*/
@@ -1153,6 +1160,7 @@ a {
 
     /*outline:1px solid tomato;*/
 }
+
 .thumb {
     position: absolute;
     top: 100%;
@@ -1177,6 +1185,7 @@ a {
 
     /*outline: 1px solid teal;*/
 }
+/*ховер по карточке*/
 .project-card:hover {
     display: block;
     width: 370px;
@@ -1190,11 +1199,12 @@ a {
                 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*outline: 1px solid green;*/
 }
+/*фокус по карточке*/
 .card-link:focus {
     display: block;
     width: 370px;
     height: 404px;  
-    /*outline: 3px solid black;*/
+    outline: 2px solid black;
     background: #FFFFFF;
     /*border: 1px solid #EEEEEE;*/
     box-sizing: border-box;
@@ -1202,7 +1212,18 @@ a {
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*utline: 1px solid green;*/
-}   
+} 
+/*оверлей по фокусу*/ 
+.card-link:focus .thumb{
+    position: absolute;
+    /*top: 0;*/
+    transform: translateY(-100%);
+    transition: transform 250ms;
+    width: 100%;
+    height: 100%;
+
+    /*outline: 1px solid black;*/
+} 
 .caption{
     width: 322px;
     height: 70px;
@@ -1309,9 +1330,8 @@ a {
     
     /*outline: 1px solid red;*/
 }
-
-/*оглавление модального окна*/
-.modal-head{
+/**/
+.modal-head {
     width: 448px;
     height: 23px;
        
@@ -1325,14 +1345,28 @@ a {
 
     /*outline: 1px solid purple;*/
 }
-
-.modal-form{
+.modal-form {
     width: 448px;
     height: 342px;
     margin-top: 12px;
+    /*margin-right: 0;*/
 }
-
-.modal-form-input{
+.form-name {
+}
+.modal-form-input {
+    /*position: relative;*/
     width: 448px;
     height: 40px;
+}
+.icon-form {
+    /*position: absolute;*/
+    width: 38px;
+    height: 38px;
+}
+.form-number {
+}
+.form-mail {
+}
+.commits {
+    width: 448px;
 }

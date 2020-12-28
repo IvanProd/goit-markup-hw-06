@@ -452,9 +452,9 @@
                 <div class="subscribe">
                     <p class="subscribe-text">Подпишитесь на рассылку</p>
                     <form action="" class="subscribe-form">
-                        <lable>
-                            <input type="text" name="foot_email" id="foot_email" class="footer-input">
-                        </lable>
+                        
+                            <input type="text" name="foot_email" id="foot_email" class="footer-input" placeholder="E-mail">
+                        
                         <button type="submit" class="subscribe-button">
                             <span class="subscribe-button-text">Подписаться</span>
                             <svg class="subscribe-button-icon">
@@ -478,23 +478,29 @@
                 <form action="" class="modal-form">
                     <p class="form-name">имя</p>
                     <label for="">
-                        Имя
+                        <svg class="icon-form">
+                            <use href="./images/icon.svg#persone"></use>
+                        </svg>
                         <input type="text" class="modal-form-input">
                     </label>
             
                     <p class="form-number">телефон</p>
                     <label for="">
-                        Телефон
-                        <input type="text" class="modal-form-input">
+                        <svg class="icon-form">
+                            <use href="./images/icon.svg#phone"></use>
+                        </svg>
+                        <input type="tel" class="modal-form-input">
                     </label>
                     
                     <p class="form-mail">Почта</p>
                     <label for="">
-                        Почта
-                        <input type="text" class="modal-form-input">
+                        <svg class="icon-form">
+                            <use href="./images/icon.svg#form-mail"></use>
+                        </svg>
+                        <input type="mail" class="modal-form-input">
                     </label>
                     <p class="commits">комментарий</p>
-                    
+                        <textarea name="" id="" cols="30" rows="10" class="commits"></textarea>
                 </form>
             </div>
         </div>
