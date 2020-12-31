@@ -73,6 +73,10 @@
     
     /*форма модального окна*/
     --text-lable: #757575;
+    --modal-form-input-border-color:rgba(33, 33, 33, 0.2);
+    --commits-placeholder:rgba(117, 117, 117, 0.5);
+    --input-icon-color: #212121;
+    --input-focus-icon-color: #2196F3;
 
     /*Карточка портфолио*/
     --thumb-text-color: #fff;
@@ -805,7 +809,7 @@ a {
     /*outline: 1px solid green;*/
 }
 /*блок ссылок и навигации*/
-.contaсt-navigation {
+.contact-navigation {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-right: 70px;
@@ -1363,16 +1367,28 @@ a {
     width: 448px;
     height: 40px;
     margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-form-input-border-color);
+    padding-left: 42px;
+}
+.modal-form-input:focus{
+    outline: none;
+    border: 1px solid var(--acent-color);
+    border-radius: 4px;
+    padding-left: 42px;
 }
 .icon-form {
-    /*position: absolute;*/
-    width: 38px;
-    height: 38px;
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    width: 12px;
+    height: 12px;
+    fill: var(--input-icon-color);
 }
-.form-number {
+.modal-form-input:focus~.icon-form{
+    fill: var(--input-focus-icon-color);
 }
-.form-mail {
-}
+
 /*поле коментариев*/
 .commits {
     width: 448px;
@@ -1380,10 +1396,33 @@ a {
     resize: none;
     padding: 12px 16px;
     margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-form-input-border-color);
+}
+.commits:focus {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--acent-color);
+    outline: none;
+
+}
+.commits::placeholder{
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+
+    color: var(--commits-placeholder);
 }
 /*подписи полей ввода*/
 .text-lable {
-    font-family: var(-Roboto);
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1394,6 +1433,7 @@ a {
     color: var(--text-lable);
 }
 .form-blok {
+    position: relative;
     width: 448px;
     height: 58px;
     margin-top: 10px;
@@ -1405,7 +1445,14 @@ a {
 .contract {
     margin: 20px auto 0;
 }
+.contract input[type='checkbox']{
+    width: 16px;
+    height: 15px;
+    
+}
 .contract-text {
+    margin-left: 8px;
+
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: normal;
