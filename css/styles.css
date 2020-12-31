@@ -1340,7 +1340,7 @@ a {
     width: 448px;
     height: 23px;
        
-    font-family: Roboto;
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -1389,14 +1389,71 @@ a {
     font-size: 12px;
     line-height: 1.166;
 
-    letter-spacing: 0.01em;
+    /*letter-spacing: 0.01em;*/
 
     color: var(--text-lable);
 }
 .form-blok {
+    width: 448px;
+    height: 58px;
     margin-top: 10px;
 }
-.contract {}
+.form-blok-commit{
+    width: 448px;
+    margin-top: 10px;
+}
+.contract {
+    margin: 20px auto 0;
+}
+.contract-text {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-lable);
+}
+.contract-link{
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+}
 
 .modal-button {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--portfolio-button-bgcolor-active);
+    
+
+}
+.modal-button-text{
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    /* identical to box height, or 187% */
+    color: var(--portfolio-button-text-active-color);
+
+    /*letter-spacing: 0.06em;*/
 }

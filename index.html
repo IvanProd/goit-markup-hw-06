@@ -474,22 +474,22 @@
                         <use href="./images/icon.svg#Close"></use>
                     </svg>
                 </div>
-                <span class="modal-head">Оставьте свои данные, мы вам перезвоним</span>
+                <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="" class="modal-form">
 
                     <div class="form-blok">
                         <label for="name" class="text-lable">Имя</label>
-                        <svg class="icon-form">
+                        <!--<svg class="icon-form">
                             <use href="./images/icon.svg#persone"></use>
-                        </svg>
+                        </svg>-->
                         <input type="text" id="name" class="modal-form-input">
                     </div>
 
                     <div class="form-blok">
                         <label for="phone" class="text-lable">Телефон</label>
-                        <svg class="icon-form">
+                        <!--<svg class="icon-form">
                             <use href="./images/icon.svg#phone"></use>
-                        </svg>
+                        </svg>-->
                         <input type="tel" id="phone" class="modal-form-input">
                     </div>
 
@@ -501,15 +501,17 @@
                         <input type="email" id="mail" class="modal-form-input">
                     </div>
 
-                    <div class="form-blok">
+                    <div class="form-blok-commit">
                         <lable for="commits" class="text-lable">Комментарий</lable>
                         <textarea name="commits" id="commits" rows="10" class="commits" placeholder="Введите текст"></textarea>
                     </div>
 
-                    <input type="checkbox" name="confirm" id="confirm">
-                    <label for="confirm">Соглашаюсь с рассылкой и принимаю </label><a href="http://" class="contract">Условия договора</a>
+                    <div class="contract">
+                        <input type="checkbox" name="confirm" id="confirm">
+                        <label for="confirm" class="contract-text">Соглашаюсь с рассылкой и принимаю <a href="http://" class="contract-link">Условия договора</a></label>
+                    </div>
 
-                    <button type="submit" class="modal-button">Отправить</button>
+                    <button type="submit" class="modal-button"><span class="modal-button-text">Отправить</span></button>
                 </form>
             </div>
         </div>
