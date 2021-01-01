@@ -1345,6 +1345,10 @@ a {
     
     /*outline: 1px solid red;*/
 }
+.round:hover>.close-icon {
+    fill: var(--acent-color);
+}
+
 /*Оглавление формы модального окна*/
 .modal-head {
     width: 448px;
@@ -1360,13 +1364,12 @@ a {
 
     /*outline: 1px solid purple;*/
 }
+/*форма, поля ввода*/
 .modal-form {
     width: 448px;
     height: 342px;
     margin-top: 12px;
     /*margin-right: 0;*/
-}
-.form-name {
 }
 .modal-form-input {
     /*position: relative;*/
@@ -1444,6 +1447,7 @@ a {
     height: 58px;
     margin-top: 10px;
 }
+/*чекбокс*/
 .form-blok-commit{
     width: 448px;
     margin-top: 10px;
@@ -1480,16 +1484,6 @@ a {
     background-color: #fff;
     border: 2px solid var(--checkbox-border);
     border-radius: 2px;
-}
-.contract-checkbox:focus {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 15px;
-    background-image: url('../images/icon-check-off.svg'); 
-    border: 2px solid var(--acent-color);
 }
 .contract input[type='checkbox']:checked + .contract-checkbox {
     position: absolute;
@@ -1533,7 +1527,7 @@ a {
 .contract-link:focus {
     outline: 2px solid black;
 }
-
+/*кнопка модалки*/
 .modal-button {
     display: flex;
     align-items: center;
