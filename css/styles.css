@@ -77,6 +77,8 @@
     --commits-placeholder:rgba(117, 117, 117, 0.5);
     --input-icon-color: #212121;
     --input-focus-icon-color: #2196F3;
+    --checkbox-border: #212121;
+    --modal--button-hover: #188CE8;
 
     /*Карточка портфолио*/
     --thumb-text-color: #fff;
@@ -98,7 +100,7 @@ a {
     outline: none;
     
 }
-/*====СКРЫВАЕМ ОГЛАВЛЕНИЯ СЕКЦИЙ====*/
+/*====СКРЫВАЕМ ЭЛЕМЕНТЫ====*/
 .header-section{
     position: absolute;
     width: 1px;
@@ -365,7 +367,7 @@ a {
 }
 /*оглавление георя*/
 /*оглавление секции*/
-/*смотри строка №29 */
+/*смотри крытие элементов вверху ↑ */
 
 /*слоган*/
 .hero-text {
@@ -1041,7 +1043,7 @@ a {
     /*border: 1px solid tomato;*/
 }
 /*===оглавление страницы===*/
-/*смотри строку №29*/
+/*смотри скрытие элементов вверху ↑ */
 
 /*===навигация портфолио===*/
 .portfolio-navigation-list {
@@ -1296,6 +1298,8 @@ a {
     height: 581px;
     background-color: var(--hero-text-color);
 
+    border-radius: 4px;
+
 
     /*outline: 1px solid red;*/
 }
@@ -1310,6 +1314,8 @@ a {
     width: 528px;
     height: 581px;
     background-color: var(--hero-text-color);  
+
+    border-radius: 4px;
 }
 
 /*иконка закрытия*/
@@ -1443,15 +1449,64 @@ a {
     margin-top: 10px;
 }
 .contract {
+    position: relative;
+    width: 448px;
+    height: 24px;
     margin: 20px auto 0;
 }
 .contract input[type='checkbox']{
+   /*скпываем элемент*/
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;    
+}
+.contract-checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
     width: 16px;
     height: 15px;
     
+    background-color: #fff;
+    border: 2px solid var(--checkbox-border);
+    border-radius: 2px;
+}
+.contract-checkbox:focus {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    background-image: url('../images/icon-check-off.svg'); 
+    border: 2px solid var(--acent-color);
+}
+.contract input[type='checkbox']:checked + .contract-checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    
+    width: 16px;
+    height: 15px;
+    
+    background-image: url('../images/icon-check-on.svg'); 
+    background-size: contain; 
+    background-origin: border-box;
+    border-color: transparent;
 }
 .contract-text {
-    margin-left: 8px;
+    margin-left: 24px;
 
     font-family: var(--Roboto);
     font-style: normal;
@@ -1484,11 +1539,25 @@ a {
     height: 50px;
     margin: 30px auto 0 auto;
     padding: 0;
+   
     border: 0;
     border-radius: 4px;
     background-color: var(--portfolio-button-bgcolor-active);
-    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-button:hover {
+    display: flex;
+    align-items: center;
 
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+    
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--modal--button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-button-text{
     margin-left: auto;
