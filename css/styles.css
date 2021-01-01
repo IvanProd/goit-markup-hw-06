@@ -1530,6 +1530,9 @@ a {
     letter-spacing: 0.03em;
     text-decoration: underline;
 }
+.contract-link:focus {
+    outline: 2px solid black;
+}
 
 .modal-button {
     display: flex;
