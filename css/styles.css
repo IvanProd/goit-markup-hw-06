@@ -1381,7 +1381,7 @@ a {
     padding-left: 42px;
 
     transition-property: border-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus{
@@ -1391,7 +1391,7 @@ a {
     padding-left: 42px;
 
     transition-property: border-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-form {
@@ -1403,14 +1403,14 @@ a {
     fill: var(--input-icon-color);
 
     transition-property: fill;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus~.icon-form{
     fill: var(--input-focus-icon-color);
 
     transition-property: fill;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1425,7 +1425,7 @@ a {
     border: 1px solid var(--modal-form-input-border-color);
 
     transition-property: border-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .commits:focus {
@@ -1439,7 +1439,7 @@ a {
     outline: none;
 
     transition-property: border-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .commits::placeholder{
