@@ -1507,6 +1507,8 @@ a {
     background-color: #fff;
     border: 2px solid var(--checkbox-border);
     border-radius: 2px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contract input[type='checkbox']:checked + .contract-checkbox {
     position: absolute;
@@ -1517,10 +1519,14 @@ a {
     width: 16px;
     height: 15px;
     
-    background-image: url('../images/icon-check-on.svg'); 
+    background-image: url('../images/icon-check.svg'); 
     background-size: contain; 
     background-origin: border-box;
-    border-color: transparent;
+    background-color: var(--acent-color);
+    border: 2px solid transparent;
+    border-radius: 2px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contract-text {
     margin-left: 24px;
