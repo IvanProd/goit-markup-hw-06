@@ -1379,11 +1379,10 @@ a {
 .modal-form-input {
     /*position: relative;*/
     width: 448px;
-    min-height: 40px;
     margin-top: 4px;
     border-radius: 4px;
     border: 1px solid var(--modal-form-input-border-color);
-    padding-left: 42px;
+    padding: 11px 11px 11px 42px;
 
     transition-property: border-color;
     transition-duration: 250ms;
