@@ -137,30 +137,30 @@ a {
 /*#################################################*/
 
 /*===КОНТЕЙНЕР ГЛАВНОЙ СТРАНИЦЫ===*/
-.mani-pag {
+/*.mani-pag {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 
-    /*outline: 1px solid gold;*/
-}
+    outline: 1px solid gold;
+}*/
 /*=====ШАПКА=====*/
 .heder {
-    max-width: 1600px;
+    min-width: 1600px;
     min-height: 80px;
     margin-left: auto;
     margin-right: auto;
+
     border-bottom: var(--border-line);
     
     /*outline: 1px solid tan;*/
 }
 .conteiner-header {
-    max-width: 1200px;
+    min-width: 1200px;
     height: 80px;
     display: flex;
     align-items: center;
-    margin: 0 auto 0 auto;
-
+    padding: 0 215px 0;
     /*outline: 1px solid tan;*/
 }
 /*===ЛОГОТИП===*/
@@ -355,8 +355,7 @@ a {
 
 /*оформление секции герой и фона*/
 .conteiner-hero {
-    max-width: 1600px;
-    min-width: 1200px;
+    min-width: 1600px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -426,8 +425,7 @@ a {
 
 /*контейнер секции особнности*/
 .conteiner-features {
-    max-width: 1200px;
-    padding: 0 15px 0 15px;
+    width: 1170px;
     margin: 0 auto 0 auto;
 
     /*outline: 1px solid red;*/
@@ -437,6 +435,7 @@ a {
     max-width: 1600px;
     min-height: 251px;
     margin: 94px auto 0 auto;
+    padding: 0 215px 0;
 
     /*outline: 1px solid green;*/
 }
@@ -452,7 +451,7 @@ a {
 }
 /*элементы списка*/
 .features-item {
-    max-width: 270px;   
+    width: 270px;   
 }
 .features-list .features-item:not(:last-child) {
     margin-right: 30px;
@@ -504,19 +503,20 @@ a {
     max-width: 1600px;
     min-height: 386px;
     margin: 94px auto 0 auto;
+    padding: 0 215px 0 215px;
 
     /*outline: 1px solid greenyellow;*/
 }
 /*контейнер чем мы занимаемся*/
 .conteiner-wedo {
-    max-width: 1200px;
-    margin: 0 auto 0 auto;
+    max-width: 1170px;
 
     /*outline: 1px solid green;*/
 }
+
 /*оглавление секции*/
 .header-wedo {
-    margin: 0 auto 50px auto;
+    margin-bottom: 50px;
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: bold;
@@ -576,9 +576,10 @@ a {
     min-width: 1600px;
     min-height: 708px;
     margin: 94px auto 0 auto;
-    padding: 94px 215px 0 215px;
+    padding-top: 94px;
     background-color: var(--bgcolor-section-our-team);
 
+    overflow: hidden;
     /*outline: 1px solid green;*/
 }
 /*контейнер наша команда*/
@@ -805,26 +806,24 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
-    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto 0 auto;
     background-color: var(--footer-bgcolor);
-    
+    min-width: 1600px;
+    padding: 0 215px 0 215px;
     /*  outline: 1px solid gold;*/
 }
 /*контейнер подвала*/
 .conteiner-footer{
-    max-width: 1600px;
-    margin: 0 auto 0 auto;
+    max-width: 1170px;
     display: flex;
-    padding: 0 215px 0 215px;
+    
     /*outline: 1px solid green;*/
 }
 /*блок ссылок и навигации*/
 .contact-navigation {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: 70px;
-
-    
+    margin-right: 70px; 
 }
 /*логотип*/
 .footer-logo:focus{
