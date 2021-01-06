@@ -299,6 +299,8 @@ a {
     align-items: center;
     color: var(--contact-link);
     margin-right: 30px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*иконка почты*/
 .ico-mail {
@@ -311,6 +313,8 @@ a {
 .contact-link-mail:hover,
 .contact-link-mail:focus {
     color: var(--acent-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*ссылка телефон*/
 .contact-link-telephon{
@@ -318,6 +322,8 @@ a {
     width: 142px;
     align-items: center;
     color: var(--contact-link);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*иконка телефона*/
 .ico-tel {
@@ -330,6 +336,8 @@ a {
 .contact-link-telephon:hover,
 .contact-link-telephon:focus {
     color: var(--acent-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*###########################################################*/
 
