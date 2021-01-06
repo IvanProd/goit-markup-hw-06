@@ -137,16 +137,16 @@ a {
 /*#################################################*/
 
 /*===КОНТЕЙНЕР ГЛАВНОЙ СТРАНИЦЫ===*/
-/*.mani-pag {
+.mani-pag {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 
     outline: 1px solid gold;
-}*/
+}
 /*=====ШАПКА=====*/
 .heder {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -355,7 +355,7 @@ a {
 
 /*оформление секции герой и фона*/
 .conteiner-hero {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -806,15 +806,17 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
-    margin: 0 auto 0 auto;
     background-color: var(--footer-bgcolor);
-    min-width: 1600px;
+}
+.section-footer{
+    margin: 0 auto 0 auto;
+    max-width: 1600px;
     padding: 0 215px 0 215px;
     /*  outline: 1px solid gold;*/
 }
 /*контейнер подвала*/
 .conteiner-footer{
-    max-width: 1170px;
+    min-width: 1170px;
     display: flex;
     
     /*outline: 1px solid green;*/
