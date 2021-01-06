@@ -137,13 +137,13 @@ a {
 /*#################################################*/
 
 /*===КОНТЕЙНЕР ГЛАВНОЙ СТРАНИЦЫ===*/
-.mani-pag {
+/*.mani-pag {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 
     outline: 1px solid gold;
-}
+}*/
 /*=====ШАПКА=====*/
 .heder {
     max-width: 1600px;
@@ -165,29 +165,28 @@ a {
 }
 /*===ЛОГОТИП===*/
 .logo {
-    width: 145px;
+    display: inline-block;
+    min-width: 145px;
     margin: 24px 93px 25px 0;
+
+    font-family: var(--Raleway);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
 }
 /*левая сторона*/
 .logo-left {
 
-    font-family: var(--Raleway);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
 
+    
     color: var(--acent-color);
 }
 /*правая сторона*/
 .logo-right {
-    font-family: var(--Raleway);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
 
-    /*letter-spacing: 0.03em;*/
+    
     color: var(--black-color);
 }
 /*===ГЛАВНАЯ НАВИГАЦИЯ===*/
@@ -715,14 +714,15 @@ a {
 
 /*контейнел секции*/
 .conteiner-clients {
-    max-width: 1600px;
+    max-width: 1170px;
     height: 182px;
     margin: 94px auto 94px auto;
 }
 /*секция постоянные клиенты*/
 .clients {
-    max-width: 1170px;
+    max-width: 1600px;
     margin: 0 auto 0 auto;
+    padding: 0 215px;
 }
 /*оглавление секции*/
 .header-client {
