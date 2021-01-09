@@ -177,16 +177,11 @@ a {
     line-height: 1.192;
 }
 /*левая сторона*/
-.logo-left {
-
-
-    
+.logo-left { 
     color: var(--acent-color);
 }
 /*правая сторона*/
 .logo-right {
-
-    
     color: var(--black-color);
 }
 /*===ГЛАВНАЯ НАВИГАЦИЯ===*/
