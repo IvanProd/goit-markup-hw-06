@@ -146,13 +146,14 @@ a {
 }*/
 /*=====ШАПКА=====*/
 .heder {
-    max-width: 1600px;
+    width: 1600px;
     min-height: 80px;
     margin-left: auto;
     margin-right: auto;
 
     border-bottom: var(--border-line);
     
+    overflow: hidden;
     /*outline: 1px solid tan;*/
 }
 .conteiner-header {
@@ -341,15 +342,17 @@ a {
 
 /*контейнер героя*/
 .hero {
+    width: 1600px;
     min-height: 600px;
     margin: 0 auto 0 auto;
+    
     /*outline: 1px solid red;*/
     
 }
 
 /*оформление секции герой и фона*/
 .conteiner-hero {
-    max-width: 1600px;
+    
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -417,21 +420,23 @@ a {
 
 /*===ОСОБЕННОСТИ===*/
 
+/*секция особенности*/
+.features {
+    min-width: 1600px;
+    min-height: 251px;
+    margin: 94px auto 0 auto;
+    padding: 0 215px 0;
+
+
+    overflow: hidden;
+    /*outline: 1px solid green;*/
+}
 /*контейнер секции особнности*/
 .conteiner-features {
     width: 1170px;
     margin: 0 auto 0 auto;
 
     /*outline: 1px solid red;*/
-}
-/*секция особенности*/
-.features {
-    max-width: 1600px;
-    min-height: 251px;
-    margin: 94px auto 0 auto;
-    padding: 0 215px 0;
-
-    /*outline: 1px solid green;*/
 }
 /*оглавление особенности*/
 /*оглавление секции*/
@@ -494,17 +499,20 @@ a {
 /*===Чем мы занимаемся===*/
 /*секция чем мы занимаеся*/
 .wedo {
-    max-width: 1600px;
+    min-width: 1600px;
     min-height: 386px;
     margin: 94px auto 0 auto;
     padding: 0 215px 0 215px;
 
+
+    overflow: hidden;
     /*outline: 1px solid greenyellow;*/
 }
 /*контейнер чем мы занимаемся*/
 .conteiner-wedo {
     max-width: 1170px;
 
+    margin: 0 auto 0 auto;
     /*outline: 1px solid green;*/
 }
 
@@ -707,17 +715,19 @@ a {
 
 /*===постоянные клиенты===*/
 
-/*контейнел секции*/
-.conteiner-clients {
-    max-width: 1170px;
-    height: 182px;
-    margin: 94px auto 94px auto;
-}
 /*секция постоянные клиенты*/
 .clients {
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto 0 auto;
     padding: 0 215px;
+
+    overflow: hidden;
+}
+/*контейнел секции*/
+.conteiner-clients {
+    min-width: 1170px;
+    height: 182px;
+    margin: 94px auto 94px auto;
 }
 /*оглавление секции*/
 .header-client {
@@ -801,18 +811,24 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
-    background-color: var(--footer-bgcolor);
+    
 }
 .section-footer{
+    min-width: 1600px;
     margin: 0 auto 0 auto;
-    max-width: 1600px;
-    padding: 0 215px 0 215px;
+    /*padding: 0 215px 0 215px;*/
+    background-color: var(--footer-bgcolor);
+
+    overflow: hidden;
     /*  outline: 1px solid gold;*/
 }
 /*контейнер подвала*/
 .conteiner-footer{
     min-width: 1170px;
+    margin: 0 auto 0 auto;
+    
     display: flex;
+    justify-content: center;
     
     /*outline: 1px solid green;*/
 }
