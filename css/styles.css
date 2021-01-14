@@ -146,22 +146,22 @@ a {
 }
 /*=====ШАПКА=====*/
 .heder {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 80px;
     margin-left: auto;
     margin-right: auto;
-
+    
     border-bottom: var(--border-line);
     
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*outline: 1px solid tan;*/
 }
 .conteiner-header {
-    min-width: 1200px;
+    max-width: 1200px;
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 0 215px 0;
+    margin: 0 auto 0 auto;
     /*outline: 1px solid tan;*/
 }
 /*===ЛОГОТИП===*/
@@ -342,7 +342,7 @@ a {
 
 /*контейнер героя*/
 .hero {
-    width: 1600px;
+    max-width: 1600px;
     min-height: 600px;
     margin: 0 auto 0 auto;
     
@@ -422,18 +422,18 @@ a {
 
 /*секция особенности*/
 .features {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 251px;
     margin: 94px auto 0 auto;
-    padding: 0 215px 0;
+    /*padding: 0 215px 0;*/
 
 
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*outline: 1px solid green;*/
 }
 /*контейнер секции особнности*/
 .conteiner-features {
-    width: 1170px;
+    max-width: 1200px;
     margin: 0 auto 0 auto;
 
     /*outline: 1px solid red;*/
@@ -499,18 +499,18 @@ a {
 /*===Чем мы занимаемся===*/
 /*секция чем мы занимаеся*/
 .wedo {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 386px;
     margin: 94px auto 0 auto;
-    padding: 0 215px 0 215px;
+    /*padding: 0 215px 0 215px;*/
 
 
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*outline: 1px solid greenyellow;*/
 }
 /*контейнер чем мы занимаемся*/
 .conteiner-wedo {
-    max-width: 1170px;
+    max-width: 1200px;
 
     margin: 0 auto 0 auto;
     /*outline: 1px solid green;*/
@@ -575,18 +575,18 @@ a {
 
 /*секция наша команда*/
 .our-team {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 708px;
     margin: 94px auto 0 auto;
     padding-top: 94px;
     background-color: var(--bgcolor-section-our-team);
 
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*outline: 1px solid green;*/
 }
 /*контейнер наша команда*/
 .conteiner-our-team {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto 0 auto;
 
     /*outline: 1px solid greenyellow;*/
@@ -717,15 +717,15 @@ a {
 
 /*секция постоянные клиенты*/
 .clients {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto 0 auto;
-    padding: 0 215px;
+    /*padding: 0 215px;*/
 
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 /*контейнел секции*/
 .conteiner-clients {
-    min-width: 1170px;
+    max-width: 1200px;
     height: 182px;
     margin: 94px auto 94px auto;
 }
@@ -811,20 +811,19 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
-    
 }
 .section-footer{
-    min-width: 1600px;
+    max-width: 1600px;
     margin: 0 auto 0 auto;
     /*padding: 0 215px 0 215px;*/
     background-color: var(--footer-bgcolor);
 
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*  outline: 1px solid gold;*/
 }
 /*контейнер подвала*/
 .conteiner-footer{
-    min-width: 1170px;
+    min-width: 1200px;
     margin: 0 auto 0 auto;
     
     display: flex;
