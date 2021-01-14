@@ -576,10 +576,6 @@ a {
 
 /*секция наша команда*/
 .our-team {
-    max-width: 1600px;
-    min-height: 708px;
-    margin: 94px auto 0 auto;
-    padding-top: 94px;
     background-color: var(--bgcolor-section-our-team);
 
     /*overflow: hidden;*/
@@ -587,8 +583,10 @@ a {
 }
 /*контейнер наша команда*/
 .conteiner-our-team {
-    width: 1200px;
-    margin: 0 auto 0 auto;
+    max-width: 1600px;
+    min-height: 708px;
+    margin: 94px auto 0 auto;
+    padding-top: 94px;
 
     /*outline: 1px solid greenyellow;*/
 }
@@ -606,6 +604,8 @@ a {
 }
 /*список наша команда*/
 .list-our-team {
+    min-width: 1200px;
+    margin: 0 auto 0;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -815,12 +815,13 @@ a {
 
 /*=====ПОДВАЛ=====*/
 .footer{
+    background-color: var(--footer-bgcolor);
 }
 .section-footer{
     max-width: 1600px;
     margin: 0 auto 0 auto;
     /*padding: 0 215px 0 215px;*/
-    background-color: var(--footer-bgcolor);
+    
 
     /*overflow: hidden;*/
     /*  outline: 1px solid gold;*/
