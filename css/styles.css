@@ -353,7 +353,6 @@ a {
 
 /*оформление секции герой и фона*/
 .conteiner-hero {
-    width: 1200px;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
