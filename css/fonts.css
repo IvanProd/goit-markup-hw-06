@@ -1,19 +1,17 @@
-@font-face {
-    font-family: 'Roboto'; /*задаем имя шрифту*/
-    font-style: normal; /*задаем тип начертания букв normal italic*/
-    font-weight: 400;   /* Задаем толщину начиртания букв*/
-    font-display: swap; /*? Надо уточнить не помню*/
-    src: url("../fonts/Roboto-Medium.woff") format("woff"), /*адрес расположения локального шрифта и его формат ttf woff woff2*/
-        url("../fonts/Roboto-Medium.woff2") format("woff2");/* форматов может быть много они записываются через запятую */
-}
+@font-face{
+    font-family: "Roboto"; 
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto-Medium.woff2") format("woff2") ;
+} 
 
-/*сколько локальных шрифтов столько их и обявляем*/
-
-@font-face {
-    font-family: 'Raleway';
+@font-face{
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url("../fonts/Raleway-Regular.woff") format("woff"),
-        url("../fonts/Raleway-Regular.woff2") format("woff2");
+        url("../fonts/Raleway-Regular.woff2") format("woff");
 }
