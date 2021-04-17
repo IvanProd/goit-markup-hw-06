@@ -930,6 +930,8 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    cursor: pointer;
 }
 .close-icon {
     fill: var(--main-color);
@@ -962,7 +964,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 .maodal__lable {
     display: block;
-    font-family: var(--main-color);
+    font-family: var(--maine-font);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1038,7 +1040,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 .contract-text {
     display: block;
     position: relative;
-    margin-top: 20px;
 
     font-family: var(--maine-font);
     font-style: normal;
