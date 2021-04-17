@@ -590,7 +590,8 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     margin-top: 9px;
 }
 .footer__address-location{
-    /* font-family: var(--maine-font); */
+    display: block;
+    width: 231px;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
@@ -613,6 +614,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 
 .footer__social {
     padding: 12px 0;
+    margin-right: 93px;
     /* outline: 1px solid tomato; */
 }
 .footer__social-title {
@@ -668,7 +670,7 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
     fill:currentColor;
 }
 .subscribe {
-    margin-left: 93px;
+
     padding: 12px 0;
     /* outline: 1px solid #2196F3;  */
 }
